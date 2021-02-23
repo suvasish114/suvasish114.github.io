@@ -1,0 +1,150 @@
+/*
+#581845
+#900C3F
+#C70039
+#FF5733
+#FFC300
+#DAF7A6
+*/
+
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@400;900&display=swap');
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+body {
+    background-color: #1a1a1a;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .2px;
+    word-spacing: .5px;
+}
+
+.title1{
+    font-size: 3.5em;
+    font-weight: 900;
+}
+.title2{
+    font-weight: unset;
+    letter-spacing: 8px;
+    word-spacing: 3px;
+}
+.title3{
+    font-size: 1.7em;
+}
+.title4{
+    font-weight: bold;
+}
+.title5{
+    padding: .5em;
+}
+
+.section1{
+    padding: 5em 0;
+}
+.section2{  
+    padding: 3em 0;
+}
+.section3{
+    padding: 5em 0;
+}
+.about_padding114{
+    padding-top: 3.5em;
+}
+
+h1, h3, h2 {
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(50deg, #ff3779, #0d0551);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+h5 {
+    color: rgb(165, 165, 165);
+}
+
+/*
+.lequid1 {
+    background-image: url(./lequid1.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-origin: border-box;
+    background-position-x: 90%;
+}
+.lequid2 {
+    background-image: url(./lequid1.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-origin: border-box;
+    background-position-x: 50%;
+    background-position-y: 20%;
+}
+.lequid3 {
+    background-image: url(./lequid2.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-origin: border-box;
+    background-position-x: 70%;
+    background-position-y: 40%;
+}
+.section1 svg{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+*/
+
+.card {
+    color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
+    background-color: #242424;
+    transition: 0.3s;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+
+.footer {
+    padding: 2em 1em;
+    justify-content: center;
+    font-family: monster_regular;
+    background-color: black;
+    color: white;
+}
+
+.coding114 {
+    font-size: 4em;
+    filter: blur(5px);
+    -webkit-filter: blur(7px);
+}
+
+footer p strong {
+    color: #f000ff;
+    letter-spacing: 3px;
+    opacity: .8;
+}
+
+footer div a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+#change {
+    fill: white;
+}
