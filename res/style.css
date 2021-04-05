@@ -15,6 +15,10 @@ font-family: 'Raleway', sans-serif;*/
 
 body {
     background-color: #1a1a1a;
+    background-image: url(./background1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 90%;
 }
 
 p{
@@ -22,6 +26,13 @@ p{
     letter-spacing: .2px;
     word-spacing: .5px;
 }
+
+/* .header114{
+    background: url(./background1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 90%;
+} */
 
 .title1{
     font-size: 3.5em;
@@ -43,7 +54,7 @@ p{
 }
 
 .section1{
-    padding: 5em 0;
+    padding: 8em .5em;
 }
 .section2{  
     padding: 3em 0;
