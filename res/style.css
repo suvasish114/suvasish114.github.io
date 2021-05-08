@@ -204,4 +204,7 @@ a:hover{
     .about-card{
         padding: 1em;
     }
+    .card{
+        margin: 1.3em 0.5em;
+    }
 }
