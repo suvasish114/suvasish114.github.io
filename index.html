@@ -5,224 +5,219 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Suvasish Das suvaish114 portfolio">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Saira:wght@300;400&display=swap"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./res/style.css">
-    <link rel="icon" href="./res/icon.png">
-    <title>Suvasish Das</title>
+    <link rel="icon" href="./res/logo.png">
+    <title>portfolio | Suvasish Das</title>
 </head>
 
 <body>
-    <section class="section1">
-        <!-- Navigation -->
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about"><strong>0.1 </strong> About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects"><strong>0.2 </strong> Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact"><strong>0.3 </strong> Contact</a>
-            </li>
-        </ul>
-        <!-- Home -->
-        <div id="home" class="container home">
-            <h3 id="title3">Hello World,</h3>
-            <hr>
-            <h1 id="title1">I'm Suvasish Das.</h1>
-            <h1 id="title2">Backend Developer | Android developer | Open Source Enthusiast</h1>
-            <p>2nd year B.Sc Computer Science student, seeking an internship to gain experience in Android
-                Development.
-                <br>
-                Bringing proficient knowledge of multiple programming languages and frameworks.
-            </p>
-            <a href="./res/Resume.pdf" download><button class="btn" type="button" data-tilt data-tilt-axis="x" data-tilt
-                    data-tilt-scale="1.1">Download Resume</button></a>
-        </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="section2">
-        <div class="container">
-            <h1 class="title"><strong style="font-size: 0.5em;">0.1 </strong>About</h1>
-            <hr>
-            <div class="row">
-                <div align="center" class="col-sm-12 col-md-7">
-                    <div class="about-card card card-1" data-tilt data-tilt-axis="x">
-                        I am Suvasish Das, a 2nd year student of <strong>Computer Science</strong>, from
-                        <strong>Barrackpore Rastraguru
-                            Surendranath College</strong>, West Bengal. Interested in coding, discovering internet and
-                        technology.
-                        Apart from that I like to participate various competitive coding and solving problems. Also I
-                        have intermediate knowledge in editing photo and video, making vectors like stuff.
-                        <br><br><br>
-                        <div class="skill">
-                            <h3>my skills are -</h3>
-                            <button class="tag">Languages</button>
-                            C, C++, Java, Python <br>
-                            <button class="tag">Database</button>
-                            SQL <br>
-                            <button class="tag">Tools</button>
-                            Vs Code, Android Studio
+    <main>
+        <!-- About -->
+        <section id="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="carousel-about col-md-7">
+                        <h4 class="py-2">Hello world,</h4>
+                        <h1 class="py-2">I'm Suvasish Das.</h1>
+                        <p class="py-2">Highly motivated versatile person, bringing proficient knowledge of multiple programming languages and frameworks including C, C++, Python, Java, Flask. I like designing & building products that positively impact the lives of users.
+                            I don't associate myself with specific tools and technology. This mindset has helped me be a quick learner and concentrate more on solving the problem at hand.</p>
+                        <a href="./res/Resume.pdf" target="_blank"><button class="my-3 btn">Resume</button></a>
+                    </div>
+                    <div align="center" class="col-md-5">
+                        <img class="carousel-img img-fluid" src="./res/profile1.jpg" alt="profile">
+                        <img class="carousel-img img-fluid" src="./res/profile2.jpg" alt="profile">
+                        <img class="carousel-img img-fluid" src="./res/profile3.jpg" alt="profile">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="section2">
+            <div class="container">
+                <h1 class="heading">timeline</h1>
+                <h1 class="heading-sm">timeline</h1>
+                <div class="row">
+                    <div class="bg-ball col-md-3"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <ul class="timeline">
+                            <li class="event">
+                                <div class="timeline-date">Jul.2019 - <strong>Present</strong></div>
+                                <h4>Under Graduation</h4>
+                                <p>Pursuing B.Sc computer science from Barrackpore Rastraguru Surendranath College (WBSU), West Bengal.</p>
+                            </li>
+
+                            <li class="event">
+                                <div class="timeline-date">Jan.2016 - Mar.2018</div>
+                                <h4>Higher Secondary</h4>
+                                <p>Completed Higher Secondary under West Bengal Countcil of Higher Scondary Education, West Bengal.</p>
+                            </li>
+
+                            <!-- <li class="event">
+                                <div class="timeline-date">Apr.2019 - July.2022</div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut fugit nobis ducimus minus, reprehenderit corrupti quod tempore consectetur omnis?</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="section3">
+            <div class="py-5 container">
+                <h1 class="heading">My Skills</h1>
+                <h1 class="heading-sm">My Skills</h1>
+                <div class="row">
+                    <div class="bg-ball col-md-3"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="skills col-md-4">
+                                <img width="50px" align="center" src="./res/skill_icon1.svg" alt="">
+                                <h4 class="m-3">Languages</h4>
+                                <p>I have intermediate knowledge in various programming languages including C, C++, Java, Python, MySql. Also worked with R, shell script.</p>
+                            </div>
+                            <div class="skills col-md-4">
+                                <img width="50px" align="center" src="./res/skill_icon2.svg" alt="">
+                                <h4 class="m-3">Frameworks</h4>
+                                <p>Some frameworks I have been worked on are Flask, Spring, Bootstrap5.</p>
+                            </div>
+                            <div class="skills col-md-4">
+                                <img width="50px" align="center" src="./res/skill_icon3.svg" alt="">
+                                <h4 class="m-3">Others</h4>
+                                <p>I have worked with git, Maven, Android studio, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="section4">
+            <div class="container">
+                <h1 class="heading">Projects</h1>
+                <h1 class="heading-sm">Projects</h1>
+                <div class="row">
+                    <div class="bg-ball col-md-3"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img class="mx-1 my-3" width="40px" src="./res/folder-icon.svg" alt="">
+                                    <h4 class="card-title">TechDiaries.in</h4>
+                                    <p class="card-body">
+                                        TechDiaries.in is a dynamic technical blog site. The app faciliates login admin and post blog-post with image, tag, href elements.
+                                    </p>
+                                    <div class="card-footer">
+                                        <span class="card-tag">Python</span>
+                                        <span class="card-tag">Flask</span>
+                                        <span class="card-tag">Mysql</span>
+                                        <span class="card-tag">Bootstrap</span>
+                                    </div>
+                                    <a href="https://github.com/suvasish114/Techdiaries.in/tree/main" target="_blank"><img class="my-3" width="25px" src="./res/ex-link-icon.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img class="mx-1 my-3" width="40px" src="./res/folder-icon.svg" alt="">
+                                    <h4 class="card-title">Vaccine Notifier</h4>
+                                    <p class="card-body">
+                                        An android based application to show vaccination center details by pincode or district search with available vaccine counts.
+                                    </p>
+                                    <div class="card-footer">
+                                        <span class="card-tag">Java</span>
+                                        <span class="card-tag">Android Studio</span>
+                                    </div>
+                                    <a href="https://github.com/suvasish114/covid-19-vaccine-notifier" target="_blank"><img class="my-3" width="25px" src="./res/ex-link-icon.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img class="mx-1 my-3" width="40px" src="./res/folder-icon.svg" alt="">
+                                    <h4 class="card-title">Portfolio site</h4>
+                                    <p class="card-body">
+                                        Static portfolio site which contains my projects and personal details, contact informations etc.
+                                    </p>
+                                    <div class="card-footer">
+                                        <span class="card-tag">Css</span>
+                                        <span class="card-tag">Bootstrap</span>
+                                    </div>
+                                    <a href="https://github.com/suvasish114/suvasish114.github.io" target="_blank"><img class="my-3" width="25px" src="./res/ex-link-icon.svg" alt=""></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div align="center" class="col-sm-12 col-md-5">
-                    <img src="./res/profile.jpeg" alt="">
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section3">
-        <div class="container">
-            <h1 class="title"><strong style="font-size: 0.5em;">0.2 </strong>Projects</h1>
-            <hr>
-            <div class="row">
+    </main>
 
-                <div class="col-sm-12 col-md-4">
-                    <a href="https://github.com/suvasish114/covid-19-vaccine-notifier">
-                        <div class="card card-1" data-tilt data-tilt data-tilt-scale="1.1">
-                            <div class="row card-title">
-                                <h1>Vaccine Notifier</h1>
-                                <hr>
-                            </div>
-                            <div class="card-body">
-                                Android based application to show veccinaton center details by pincode or district with available vaccine count.
-                                <br>(working on it)
-                            </div>
-                            <div class="card-footer">Java, Volley <br>API</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-12 col-md-4">
-                    <a href="https://suvasish114.github.io/Movie-Ocean/">
-                        <div class="card card-1" data-tilt data-tilt data-tilt-scale="1.1">
-                            <div class="row card-title">
-                                <h1>Movie Ocean</h1>
-                                <hr>
-                            </div>
-                            <div class="card-body">
-                                A simple android based Application to discover trending movies, and there details with
-                                IMDB rating.
-                            </div>
-                            <div class="card-footer">Java, Volley, Glide <br>API</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <a href="https://github.com/suvasish114/weather-application">
-                        <div class="card card-1" data-tilt data-tilt data-tilt-scale="1.1">
-                            <div class="row card-title">
-                                <h1>Weather App</h1>
-                                <hr>
-                            </div>
-                            <div class="card-body">
-                                A simple weather application using Flask, which fetch data from openweathermap.org and
-                                render in this application.
-                            </div>
-                            <div class="card-footer">Python, Flask <br>Bootstrap CDN, API</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <a href="https://github.com/suvasish114/suvasish114.github.io">
-                        <div class="card card-1" data-tilt data-tilt data-tilt-scale="1.1">
-                            <div class="row card-title">
-                                <h1>Portfolio Site</h1>
-                                <hr>
-                            </div>
-                            <div class="card-body">
-                                A static portfolio site, which contain all my projects and include my personal details.
-                            </div>
-                            <div class="card-footer">Html, Css <br>Bootstrap</div>
-                        </div>
-                    </a>
-                </div>
+    <footer>
+        <div class="py-5" align="center">
+            <h1 class="py-3">What's next ?</h1>
+            <a href="">
+                <a href="https://techdiaries.in/" target="_blank"><button class="btn">Blog</button></a>
+            </a>
+            <div class="p-3">
+                <p>I am open for internship and freelancing projects. Contact me.</p>
+                <p>Email: <a href="mailto:misuvasish114@gmail.com">misuvasish114@gmail.com</a></p>
             </div>
+            <div class="py-3">
+                <a class="px-2" target="_blank" href="https://suvasish114.medium.com/">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path id="change"
+                            d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="px-2" target="_blank" href="https://github.com/suvasish114">
+                    <svg height="25px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub icon</title>
+                        <path id="change"
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                        </path>
+                    </svg>
+                </a>
+                <a class="px-2" target="_blank" href="https://www.linkedin.com/in/suvasish-das-73862b1a0/">
+                    <svg height="25px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>LinkedIn icon</title>
+                        <path id="change"
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="px-2" target="_blank" href="https://twitter.com/Suvasis38993551">
+                    <svg height="25px" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>Twitter icon</title>
+                        <path id="change"
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <p class="py-1">© 2021 | Build with ♡</p>
         </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section4">
-        <div class="container">
-            <h1 class="title"><strong style="font-size: 0.5em;">0.3 </strong>Contact</h1>
-            <hr>
-            <footer>
-                <div align="center">
-                    <h1>What's next?</h1>
-
-                    <a href="https://techdiaries.in/"><button class="btn" type="button" data-tilt
-                            data-tilt-axis="x" data-tilt data-tilt-scale="1.1">Blog</button></a>
-                    <p>I am open for internship and freelancing projects.Contact me.
-                        <br>mail : <b>misuvasish114@gmil.com</b>
-                    </p>
-
-                    <div align="center">
-                        <a href="https://suvasish114.medium.com/">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path id="change"
-                                    d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/suvasish114">
-                            <svg height="25px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>GitHub icon</title>
-                                <path id="change"
-                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/suvasish-das-73862b1a0/">
-                            <svg height="25px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>LinkedIn icon</title>
-                                <path id="change"
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://twitter.com/Suvasis38993551">
-                            <svg height="25px" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>Twitter icon</title>
-                                <path id="change"
-                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-        </div>
-
-    </section>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-    <p class="end" align="center"><a href="https://github.com/suvasish114">Built with ♥</a></p>
     </footer>
 
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>
