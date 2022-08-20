@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=New+Tegomin&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- bootstrap js     -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -23,93 +23,116 @@
 <body>
     <main>
         <a href="#navbar"><i class="bi bi-arrow-up-circle"></i></a>
-        <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 sidebar py-4">
-                        <div class="content">
-                            <img class="rounded-circle profile" src="/assets/profile.jpg" alt="">
-                            <div class="name">Suvasish Das</div>
-                            <div class="caption">M.Sc computer science student | AI/ML enthusiast</div>
-                            <div><a href="">resume</a></div>
-                            <div class="my-2">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-github"></i></a>
-                                <a href=""><i class="bi bi-mortarboard-fill"></i></a>
-                                <a href=""><i class="bi bi-file-earmark-person"></i></a>
-                                <a href=""><i class="bi bi-envelope-fill"></i></a>
-                                <a href=""><i class="bi bi-arrow-down-circle"></i></a>
-                            </div>
-                            <hr>
-                            <div class="title">Skills</div>
-                            <div class="tags">
-                                <span class="tag">AI/ML</span>
-                                <span class="tag">c/c++</span>
-                                <span class="tag">backend development</span>
-                                <span class="tag">python</span>
-                                <span class="tag">flask</span>
-                                <span class="tag">opencv</span>
-                                <span class="tag">git/github</span>
-                                <!-- <span class="tag"></span>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- sidebar -->
+                <div class="col-md-3 sidebar py-4">
+                    <div class="content">
+                        <img class="rounded-circle profile" src="/assets/profile.jpg" alt="">
+                        <div class="name">Suvasish Das</div>
+                        <div class="caption">M.Sc computer science student | Artificial intelligence enthusiast</div>
+                        <div><a class="badge text-bg-primary" href="https://docs.google.com/document/d/1j6KPNgM96Pp2JqzlzLWgAc-gvkFrXk-Wcy_Fdl38Zj0/edit?usp=sharing">resume</a></div>
+                        <div class="my-2">
+                            <a href="https://twitter.com/suvasish114"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/suvasish-das-73862b1a0/"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/suvasish114"><i class="bi bi-github"></i></a>
+                            <!-- <a href=""><i class="bi bi-mortarboard-fill"></i></a> -->
+                            <!-- <a href=""><i class="bi bi-file-earmark-person"></i></a> -->
+                            <a href="mailto:misuvasish114@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                            <!-- <a href=""><i class="bi bi-arrow-down-circle"></i></a> -->
+                        </div>
+                        <hr>
+                        <div class="title">Skills</div>
+                        <div class="tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">c/c++</span>
+                            <span class="tag">backend development</span>
+                            <span class="tag">python</span>
+                            <span class="tag">flask</span>
+                            <span class="tag">opencv</span>
+                            <span class="tag">git/github</span>
+                            <!-- <span class="tag"></span>
                                 <span class="tag"></span>
                                 <span class="tag"></span> -->
-                            </div>
                         </div>
                     </div>
-                    <div class="col-md-8 main">
-                        <nav id="navbar" class="navbar navbar-expand-lg">
-                            <div class="container-fluid">
-                                <button id="expand" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation" onclick="toggle()">
-                                    <i id="expandbtn" class="bi bi-list"></i>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#about">About</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#news">News</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#timeline">Timeline</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#projects">Projects</a>
-                                        </li>
-                                        <!-- <li class="nav-item">
-                                            <a class="nav-link" href="#">Article</a>
-                                        </li> -->
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                    <div class="end"><i class="bi bi-dash-lg"></i></div>
+                </div>
+
+                <!-- content -->
+                <div class="col-md-7 main">
+
+                    <nav id="navbar" class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <button id="expand" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation" onclick="toggle()">
+                                <i id="expandbtn" class="bi bi-list"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#about"><i
+                                                class="mx-1 bi bi-person"></i>About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#news"><i class="mx-1 bi bi-paperclip"></i>News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#timeline"><i
+                                                class="mx-1 bi bi-stopwatch"></i>Timeline</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#projects"><i
+                                                class="mx-1 bi bi-terminal"></i>Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact"><i
+                                                class="mx-1 bi bi-telephone"></i>Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="end"><i class="bi bi-dash-lg"></i></div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="content px-4">
+                        <div id="about" class="about">
+                            <div class="title">About</div>
+                            <div class="text"> I am <span class="highlight">Suvasish Das</span>. A self tought
+                                developer, currently Pursuing my <span class="highlight">masters in computer
+                                    science</span> from WBSU, west bengal. I'm studying and living in kolkata.
+                                <br><br>
+                                I am a highly motivated versatile person, bringing proficient knowledge of
+                                multiple programming languages and frameworks including C, C++, Python, Flask.
+                                I like designing & building products that positively impact the lives of users. I
+                                don't associate myself with specific tools and technology. This mindset has helped
+                                me be a quick learner and concentrate more on solving the problem at hand.
+                            </div>
+                        </div>
+                        <div id="news" class="news">
+                            <div class="title">News</div>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="en" dir="ltr">Starting my journey of <a
+                                                href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a>
+                                            with data structures and algorithms. Also maintaining a Github repository
+                                            with 5 others, to keep record of our progress.<br>Repository 👇🏻<a
+                                                href="https://t.co/DeHbSiyIBA">https://t.co/DeHbSiyIBA</a></p>&mdash;
+                                        Papai 🎭 (@suvasish114) <a
+                                            href="https://twitter.com/suvasish114/status/1560956324652859393?ref_src=twsrc%5Etfw">August
+                                            20, 2022</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
                                 </div>
                             </div>
-                        </nav>
-                        <div class="content">
-                            <div id="about" class="about">
-                                <div class="title">About</div>
-                                <div class="text"> Highly motivated versatile person, bringing
-                                    proficient knowledge of
-                                    multiple programming languages and frameworks including C, C++, Python, Java, Flask.
-                                    I like designing & building products that positively impact the lives of users. I
-                                    don't associate myself with specific tools and technology. This mindset has helped
-                                    me be a quick learner and concentrate more on solving the problem at hand.</div>
-                            </div>
-                            <div id="news" class="news">
-                                <div class="title">News</div>
-                                <ul class="text">
-                                    <li>Documenting of project NO 1 is going on. [jun.2022]</li>
-                                </ul>
-                            </div>
-                            <div class="experience">
-                                <div id="timeline" class="title">Timeline</div>
-                                <div class="timeline">
-                                    <!-- <div class="event">
+                        </div>
+                        <div class="experience">
+                            <div id="timeline" class="title">Timeline</div>
+                            <div class="timeline">
+                                <!-- <div class="event">
                                         <div class="date">
                                             October.2022 - <strong>Present</strong>
                                         </div>
@@ -117,85 +140,105 @@
                                         <div class="text">Pursuing M.Sc computer science from Barrackpore Rastraguru
                                             Surendranath College (WBSU), West Bengal.</div>
                                     </div> -->
-                                    <div class="event">
-                                        <div class="date">Jun.2019 - <strong>present</strong></div>
-                                        <div class="sub-title">Under Graduation</div>
-                                        <div class="text">Pursuing B.Sc computer science from Barrackpore Rastraguru
-                                            Surendranath College (WBSU), West Bengal.
-                                            <ul>
-                                                <li><strong>Grade: </strong>TBA</li>
-                                                <li><strong>Courses: </strong> OOP, computer system architechture, data structure and algorithm (design), database management systems, artificial intelligence, digital image processing.</li>
-                                            </ul>
-                                        </div>
+                                <div class="event">
+                                    <div class="date">Jun.2019 - Jul.2022</div>
+                                    <div class="sub-title">Under Graduation</div>
+                                    <div class="text">Completed B.Sc computer science from Barrackpore Rastraguru
+                                        Surendranath College (WBSU), West Bengal.
+                                        <ul>
+                                            <li><strong>Grade: </strong>9.56 (CGPA)</li>
+                                            <li><strong>Courses: </strong> OOP, computer system architechture, data
+                                                structure and algorithm (design), database management systems,
+                                                artificial intelligence, digital image processing.</li>
+                                        </ul>
                                     </div>
-                                    <div class="event">
-                                        <div class="date">January.2016 - March.2018</div>
-                                        <div class="sub-title">Higher Secondary</div>
-                                        <div class="text">Completed Higher Secondary under West Bengal Countcil of
-                                            Higher Scondary Education, West Bengal.
+                                </div>
+                                <div class="event">
+                                    <div class="date">January.2016 - March.2018</div>
+                                    <div class="sub-title">Higher Secondary</div>
+                                    <div class="text">Completed Higher Secondary under West Bengal Countcil of
+                                        Higher Scondary Education, West Bengal.
                                         <ul>
                                             <li><strong>Grade: </strong>73%</li>
                                         </ul>
                                     </div>
-                                    </div>
                                 </div>
                             </div>
-                            <div id="projects" class="projects">
-                                <div class="title">Projects</div>
-                                <div class="project">
-                                    <div class="sub-title">
-                                        1. Non adaptive partial image encryption
-                                        <a class="color link"
-                                            href="https://github.com/suvasish114/Non-Adaptive-Partial-Image-Encryption">[code]</a>
-                                        <a class="color link"
-                                            href="https://www.sciencedirect.com/science/article/pii/S2212017313005707">[paper]</a>
+                        </div>
+                        <div id="projects" class="projects">
+                            <div class="title">Projects</div>
+                            <div class="project">
+                                <div class="sub-title">1. Non adaptive partial image encryption
+                                    <div class="badges">
+                                        <a href="https://github.com/suvasish114/Non-Adaptive-Partial-Image-Encryption" class="badge text-bg-primary">Code</a>
+                                        <a href="https://github.com/suvasish114/Non-Adaptive-Partial-Image-Encryption/blob/main/report/project%20report%202022.pdf" class="badge text-bg-secondary">Report</a>
+                                        <a href="https://www.sciencedirect.com/science/article/pii/S2212017313005707" class="badge text-bg-secondary">Paper</a>
                                     </div>
-                                    <ul class="text">
-                                        <li>Implement an image encryption method based on non-adaptiveness chaos,
-                                            proposed BRSNC UG students under <a
-                                                href="https://scholar.google.co.in/citations?user=vhkRGncAAAAJ&hl=en">dr.sukalyan
-                                                som</a>'s mentorship.</li>
-                                        <li>Implement a pseudo random number generator using chaotic map. <a
-                                                class="color"
-                                                href="https://www.academia.edu/9159152/A_Random_Bit_Generator_Using_Chaotic_Maps">[paper]</a>
-                                        </li>
-                                        <li>Reduce noise up to 80% created by public channels and, retrieve encrypted
-                                            image. Made with Python, OpenCV, and Jupyter-notebook.</li>
-                                    </ul>
                                 </div>
-                                <div class="project">
-                                    <div class="sub-title">
-                                        2. A full featured technical blog website
-                                        <a class="color link" href="https://github.com/suvasish114/blog">[code]</a>
-                                    </div>
-                                    <ul>
-                                        <li>A full-featured technical blog website, made with Python, MySQL, flask,
-                                            OpenCV, bootstrap, HTML/CSS. Facilitates user/admin login, session
-                                            management, and advanced article browsing.</li>
-                                        <li>Dynamic article suggestion using machine learning (in development).</li>
-                                    </ul>
-                                </div>
+
+                                <ul class="text">
+                                    <li>Implement an <span class="highlight">image encryption method</span> based on
+                                        non-adaptiveness chaos,
+                                        proposed BRSNC UG students under <a class="highlight"
+                                            href="https://scholar.google.co.in/citations?user=vhkRGncAAAAJ&hl=en">dr.sukalyan
+                                            som</a>'s mentorship.</li>
+                                    <li><span class="highlight">Implement a pseudo random number generator</span> using
+                                        chaotic map.
+                                        <a href="https://www.academia.edu/9159152/A_Random_Bit_Generator_Using_Chaotic_Maps" class="badge text-bg-secondary">Paper</a>
+                                    </li>
+                                    <li>Reduce noise up to 80% created by public channels and, retrieve encrypted
+                                        image. Made with Python, OpenCV, and Jupyter-notebook.</li>
+                                </ul>
                             </div>
-                            <!-- <div class="articles">
+                            <div class="project">
+                                <div class="sub-title">
+                                    2. A full featured technical blog website
+                                    <div class="badges">
+                                        <a href="assets/error.html" class="badge text-bg-primary">Live</a>
+                                        <a href="https://github.com/suvasish114/blog" class="badge text-bg-secondary">Code</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>A <span class="highlight">full-featured technical blog</span> website, made with
+                                        Python, MySQL, flask,
+                                        OpenCV, bootstrap, HTML/CSS. Facilitates user/admin login, session
+                                        management, and advanced article browsing.</li>
+                                    <li>Dynamic article suggestion using machine learning (in development).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="articles">
                                 <div class="title">Articles</div>
                             </div> -->
-                            <div id="contact" class="contact">
-                                <div class="title">Contact</div>
-                                <div>
-                                    <li><strong>Address: </strong>Niveditanagar, J.R.R Road, PO- N.C.Pukur, Kol- 700 122</li>
-                                    <li><Strong>Email: </Strong>misuvasish114 AT gmail.com</li>
-                                    <li><strong>Mobile: </strong>(+91) six 29 one 7 three 07 three 8</li>
-                                </div>
+                        <div id="contact" class="contact">
+                            <div class="title">Contact</div>
+                            <div class="contact-details">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th><i class="mx-2 bi bi-geo-alt"></i>Address:</th>
+                                            <td>Niveditanagar, J.R.R Road, PO- N.C.Pukur, Kol- 700122</td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="mx-2 bi bi-envelope"></i>Email:</th>
+                                            <td>misuvasish114 AT gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="mx-2 bi bi-telephone"></i>Mobile:</th>
+                                            <td>(+91) six 29 one 7 three 07 three 8</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <hr>
-                            <footer class="footer">
-                                <div class="sign">suvasish das</div>
-                                <div>All right reserved | copyright 2022</div>
-                            </footer>
                         </div>
+
+                        <footer class="footer">
+                            <hr>
+                            <div>All right reserved | copyright 2022</div>
+                        </footer>
                     </div>
-                    <div class="col-md-1"></div>
                 </div>
+                <div class="col-md-2"></div>
             </div>
         </div>
     </main>
