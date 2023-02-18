@@ -4,259 +4,440 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Suvasish Das | Protfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/boxes.svg">
-    <!-- google fonts -->
+    <title>Suvasish Das | Portfolio</title>
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- bootstrap js     -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/style.css">
-    <!-- <script src="script/script.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <!-- static -->
+    <link rel="icon" type="image/x-icon" href="./src/assets/favicon-16x16.png">
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- <script src="./src/script.js"></script> -->
 </head>
 
 <body>
-    <main>
-        <a href="#navbar"><i class="bi bi-arrow-up-circle"></i></a>
-        <div class="container-fluid">
-            <div class="row">
-                <!-- sidebar -->
-                <div class="col-md-3 sidebar py-4">
-                    <div class="content">
-                        <img class="rounded-circle profile" src="/assets/profile.jpg" alt="">
-                        <div class="name">Suvasish Das</div>
-                        <div class="caption">M.Sc computer science student | Artificial intelligence enthusiast</div>
-                        <div class="my-3">
-                            <a class="badge text-bg-primary" href="https://docs.google.com/document/d/1j6KPNgM96Pp2JqzlzLWgAc-gvkFrXk-Wcy_Fdl38Zj0/edit?usp=sharing"><i class="bi bi-file-earmark-person" style="color: white; padding: 0; margin: 0;"></i> Resume</a>
-                            <a href="https://www.amazon.in/hz/wishlist/ls/2WKHBWBT6K02S?ref_=wl_share" class="badge text-bg-warning"><i class="bi bi-gift-fill" style="color: black; padding: 0; margin: 0;"></i> Buy me a book</a>
-                        </div>
-                        <div class="my-2">
-                            <a href="https://twitter.com/suvasish114"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.linkedin.com/in/suvasish-das-73862b1a0/"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/suvasish114"><i class="bi bi-github"></i></a>
-                            <!-- <a href=""><i class="bi bi-mortarboard-fill"></i></a> -->
-                            <!-- <a href=""><i class="bi bi-file-earmark-person"></i></a> -->
-                            <a href="mailto:misuvasish114@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-                            <!-- <a href=""><i class="bi bi-arrow-down-circle"></i></a> -->
-                        </div>
-                        <hr>
-                        <div class="title">Skills</div>
-                        <div class="tags">
-                            <span class="tag">AI/ML</span>
-                            <span class="tag">c/c++</span>
-                            <span class="tag">backend development</span>
-                            <span class="tag">python</span>
-                            <span class="tag">flask</span>
-                            <span class="tag">opencv</span>
-                            <span class="tag">git/github</span>
-                            <!-- <span class="tag"></span>
-                                <span class="tag"></span>
-                                <span class="tag"></span> -->
-                        </div>
-                    </div>
-                </div>
+    <a href="#sec1"><i class="bi bi-arrow-up-circle"></i></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <!-- blank -->
+            </div>
+            <div class="col-md-10">
 
-                <!-- content -->
-                <div class="col-md-7 main">
+                <section id="sec1">
+                    <img class="bg-pattern" src="src/assets/pattern.svg" alt="">
+                    <div class="mask"></div>
+                    <!-- <div class="bg-white"></div> -->
 
-                    <nav id="navbar" class="navbar navbar-expand-lg">
+                    <div class="position-relative">
+                        <!-- navbar -->
+                        <nav id="navbar" class="navbar navbar-expand-lg my-1">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Suvasish Das</a>
+                                <button id="expand" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation" onclick="toggle()">
+                                    <i id="expandbtn" class="bi bi-list"></i>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="#sec2">About</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#sec3">News</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#sec4">Projects</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#sec5">Writings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <!-- landing -->
                         <div class="container-fluid">
-                            <button id="expand" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation" onclick="toggle()">
-                                <i id="expandbtn" class="bi bi-list"></i>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#about"><i
-                                                class="mx-1 bi bi-person"></i>About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#news"><i class="mx-1 bi bi-paperclip"></i>News</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#timeline"><i
-                                                class="mx-1 bi bi-stopwatch"></i>Timeline</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#projects"><i
-                                                class="mx-1 bi bi-terminal"></i>Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#contact"><i
-                                                class="mx-1 bi bi-telephone"></i>Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="https://suvasish114.blogspot.com/">
-                                            <i class="mx-1 bi bi-vector-pen"></i>Blog</a>
-                                    </li>
-                                </ul>
-                                <div class="end"><i class="bi bi-dash-lg"></i></div>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <div class="content px-4">
-                        <div id="about" class="about">
-                            <div class="title">About</div>
-                            <div class="text"> I am <span class="highlight">Suvasish Das</span>. A self tought
-                                developer, currently Pursuing my <span class="highlight">masters in computer
-                                    science</span> from WBSU, west bengal. I'm studying and living in kolkata.
-                                <br><br>
-                                I am a highly motivated versatile person, bringing proficient knowledge of
-                                multiple programming languages and frameworks including C, C++, Python, Flask.
-                                I like designing & building products that positively impact the lives of users. I
-                                don't associate myself with specific tools and technology. This mindset has helped
-                                me be a quick learner and concentrate more on solving the problem at hand.
-                            </div>
-                        </div>
-                       
-                        <div id="news" class="news">
-                            <div class="title">News</div>
-                            <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
-                                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Starting my journey of <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a> with data structures and algorithms. Also maintaining a Github repository with 5 others, to keep record of our progress.<br>Repository 👇🏻<a href="https://t.co/DeHbSiyIBA">https://t.co/DeHbSiyIBA</a></p>&mdash; Papai 🎭 (@suvasish114) <a href="https://twitter.com/suvasish114/status/1560956324652859393?ref_src=twsrc%5Etfw">August 20, 2022</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
-                                
-                                <div class="col">
-                                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">⬛️⬜️⬜️⬜️⬜️ 10%<br>Learning OAuth 2.0 <br>Found this awesome presentation by Nate Barbettini 👇🏻<a href="https://t.co/vFMRPu3E7x">https://t.co/vFMRPu3E7x</a></p>&mdash; Papai 🇮🇳 (@suvasish114) <a href="https://twitter.com/suvasish114/status/1576075326119026688?ref_src=twsrc%5Etfw">October 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
-
-                                <!-- <div class="col">
-                                    news 3 to add
-                                </div> -->
-
-                            </div>
-                            
-                        </div>
-                        <div class="experience">
-                            <div id="timeline" class="title">Timeline</div>
-                            <div class="timeline">
-                                <div class="event">
-                                    <div class="date">October.2022 - <strong>Present</strong></div>
-                                    <div class="sub-title">Post Graduation</div>
-                                    <div class="text">Pursuing M.Sc computer science from West Bengal State University, West Bengal.
-                                        <ul>
-                                            <li><strong>Grade: </strong>TBA</li>
-                                            <li><strong>Courses: </strong> Advanced Computer Architechture, DBMS, Networking, OOPS, Advanced OS, Automata, 
-                                            Software Engineering, Compilers, Artificial Intelligence, Seminers.</li>
-                                        </ul>
+                            <div class="row">
+                                <div class="col-md-10 content">
+                                    <div class="mb-0 hello">Hello world</div>
+                                    <div class="mb-4 name">I'm <strong class="primary-color">Suvasish Das</strong>, developing systems with <strong>AI</strong></div>
+                                    <div class="text mb-5">
+                                        Designing & Building Products That Positively Impact The Lives Of Users. I'm
+                                        currently Pursuing masters in computer science from WBSU, west bengal. Studying
+                                        and
+                                        living in kolkata.
                                     </div>
+                                    <a href="#sec4"><button class="btn btn-dark">See My Works</button></a>
+                                    <a href="https://docs.google.com/document/d/1SqeaGomM8mOWTa1eXDHmk4BIC65DJAfTGBKAwCgPMtU/edit?usp=sharing"><button class="btn btn-light">My Resume</button></a>
                                 </div>
-                                <div class="event">
-                                    <div class="date">Jun.2019 - Jul.2022</div>
-                                    <div class="sub-title">Under Graduation</div>
-                                    <div class="text">Completed B.Sc computer science from Barrackpore Rastraguru
-                                        Surendranath College (WBSU), West Bengal.
-                                        <ul>
-                                            <li><strong>Grade: </strong>9.56 (CGPA)</li>
-                                            <li><strong>Courses: </strong> OOP, computer system architechture, data
-                                                structure and algorithm (design), database management systems,
-                                                artificial intelligence, digital image processing.</li>
-                                        </ul>
-                                    </div>
+                                <div class="col-md-2">
+                                    <!-- blank -->
                                 </div>
-                                <div class="event">
-                                    <div class="date">January.2016 - March.2018</div>
-                                    <div class="sub-title">Higher Secondary</div>
-                                    <div class="text">Completed Higher Secondary under West Bengal Countcil of
-                                        Higher Scondary Education, West Bengal.
-                                        <ul>
-                                            <li><strong>Grade: </strong>73%</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="projects" class="projects">
-                            <div class="title">Projects</div>
-                            <div class="project">
-                                <div class="sub-title">1. Non adaptive partial image encryption
-                                    <div class="badges">
-                                        <a href="https://github.com/suvasish114/Non-Adaptive-Partial-Image-Encryption" class="badge text-bg-primary">Code</a>
-                                        <a href="https://github.com/suvasish114/Non-Adaptive-Partial-Image-Encryption/blob/main/report/project%20report%202022.pdf" class="badge text-bg-secondary">Report</a>
-                                        <a href="https://www.sciencedirect.com/science/article/pii/S2212017313005707" class="badge text-bg-secondary">Paper</a>
-                                    </div>
-                                </div>
-
-                                <ul class="text">
-                                    <li>Implement an <span class="highlight">image encryption method</span> based on
-                                        non-adaptiveness chaos,
-                                        proposed BRSNC UG students under <a class="highlight"
-                                            href="https://scholar.google.co.in/citations?user=vhkRGncAAAAJ&hl=en">dr.sukalyan
-                                            som</a>'s mentorship.</li>
-                                    <li><span class="highlight">Implement a pseudo random number generator</span> using
-                                        chaotic map.
-                                        <a href="https://www.academia.edu/9159152/A_Random_Bit_Generator_Using_Chaotic_Maps" class="badge text-bg-secondary">Paper</a>
-                                    </li>
-                                    <li>Reduce noise up to 80% created by public channels and, retrieve encrypted
-                                        image. Made with Python, OpenCV, and Jupyter-notebook.</li>
-                                </ul>
-                            </div>
-                            <div class="project">
-                                <div class="sub-title">
-                                    2. A full featured technical blog website
-                                    <div class="badges">
-                                        <a href="assets/error.html" class="badge text-bg-primary">Live</a>
-                                        <a href="https://github.com/suvasish114/blog" class="badge text-bg-secondary">Code</a>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>A <span class="highlight">full-featured technical blog</span> website, made with
-                                        Python, MySQL, flask,
-                                        OpenCV, bootstrap, HTML/CSS. Facilitates user/admin login, session
-                                        management, and advanced article browsing.</li>
-                                    <li>Dynamic article suggestion using machine learning (in development).</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="articles">
-                                <div class="title">Articles</div>
-                            </div> -->
-                        <div id="contact" class="contact">
-                            <div class="title">Contact</div>
-                            <div class="contact-details">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <th><i class="mx-2 bi bi-geo-alt"></i>Address:</th>
-                                            <td>Niveditanagar, J.R.R Road, PO- N.C.Pukur, Kol- 700122</td>
-                                        </tr>
-                                        <tr>
-                                            <th><i class="mx-2 bi bi-envelope"></i>Email:</th>
-                                            <td>misuvasish114 AT gmail.com</td>
-                                        </tr>
-                                        <tr>
-                                            <th><i class="mx-2 bi bi-telephone"></i>Mobile:</th>
-                                            <td>(+91) six 29 one 7 three 07 three 8</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
 
-                        <footer class="footer">
-                            <hr>
-                            <div>All right reserved | copyright 2022</div>
-                        </footer>
+                        <!-- footer -->
+                        <div class="scroll position-absolute bottom-0 start-0 my-2">
+                            <p><i class="bi bi-mouse"></i><span class="mx-2">
+                                    <!-- blank -->
+                                </span>Scroll Down</p>
+                        </div>
+                        <div class="findmeon position-absolute bottom-0 end-0 my-4">
+                            <div class="social">
+                                find me on
+                                <span class="mx-2">
+                                    <!-- blank -->
+                                </span>
+                                <a href="https://www.linkedin.com/in/suvasish-das-73862b1a0/"><i class="mx-1 bi bi-linkedin"></i></a>
+                                <a href="https://github.com/suvasish114"><i class="mx-1 bi bi-github"></i></a>
+                                <a href="https://twitter.com/suvasish114"><i class="mx-1 bi bi-twitter"></i></a>
+                                <a href="https://www.instagram.com/suvasish114"><i class="mx-1 bi bi-instagram"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2"></div>
+                </section>
+            </div>
+            <div class="col-md-1">
+                <!-- blank -->
             </div>
         </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    </div>
+
+    <!-- skills -->
+    <section id="sec2">
+        <img class="bg-pattern" src="src/assets/pattern3.webp" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+                <div class="col-md-10">
+                    <div class="container-fluid content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="mb-5 profile" src="./src/assets/profile.jpg" alt="">
+                                <div class="mb-4">
+                                    <div class="sub-header mb-4">SKILLS</div>
+
+                                    <span class="badge text-bg-secondary">Machine Learning</span>
+                                    <span class="badge text-bg-secondary">Backend Development</span>
+                                    <span class="badge text-bg-secondary">Python</span>
+                                    <span class="badge text-bg-secondary">Git/Github</span>
+                                    <span class="badge text-bg-secondary">LaTex</span>
+                                    <span class="badge text-bg-secondary">Pandas</span>
+
+                                    <!-- <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-7">
+                                <div class="mb-0 hello">About Me</div>
+                                <div class="header mb-4">A small <strong class="primary-color">Introduction</strong></div>
+
+                                <div class="text mb-5">I am a highly motivated versatile person, bringing proficient
+                                    knowledge of multiple programming languages and frameworks including C, C++, Python,
+                                    Flask. I like designing & building products that positively impact the lives of
+                                    users. I don't associate myself with specific tools and technology. This mindset has
+                                    helped me be a quick learner and concentrate more on solving the problem at hand.
+                                </div>
+                                <div class="sub-header mb-4">EDUCATION</div>
+                                <div class="text">2024: M.Sc Computer Science - Ongoing</div>
+                                <div class="text">2022: B.Sc Computer Science</div>
+                                <div class="text">2018: Heiger Secondary</div>
+                                <h4></h4>
+                                <div class="mb-5 my-5">
+                                    <a href="https://docs.google.com/document/d/1gq-mLNA8LROuo8IydEZ_PwwAxcc5RDs6ks6gxOTfgcM/edit"><button class="btn btn-dark">Download CV</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news -->
+    <section id="sec3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="mb-0 hello">News</div>
+                        <div class="header mb-4">My <strong class="primary-color">News</strong></div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 contact">
+                                    <img src="./src/assets/card_bg4.jpeg" alt="">
+                                    <div class="card-body">
+                                        <div class="mb-3"><i class="bi bi-twitter"></i></div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae perferendis,
+                                            quae vel ipsa et a ratione quam quo accusamus nulla!</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end card-footer bg-transparent">
+                                        <a href=""><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 contact">
+                                    <img src="./src/assets/card_bg5.jpeg" alt="">
+                                    <div class="card-body">
+                                        <div class="mb-3"><i class="bi bi-twitter"></i></div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae perferendis,
+                                            quae vel ipsa et a ratione quam quo accusamus nulla!</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end card-footer bg-transparent">
+                                        <a href=""><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 contact">
+                                    <img src="./src/assets/card_bg4.jpeg" alt="">
+                                    <div class="card-body">
+                                        <div class="mb-3"><i class="bi bi-twitter"></i></div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae perferendis,
+                                            quae vel ipsa et a ratione quam quo accusamus nulla!</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end card-footer bg-transparent">
+                                        <a href=""><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-5 my-5">
+                                <a href="https://twitter.com/suvasish114"><button class="btn btn-dark">More on Twitter</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="sec4">
+        <img class="bg-pattern" src="src/assets/pattern.svg" alt="">
+        <div class="mask"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="mb-0 hello">Projects</div>
+                        <div class="header mb-4" style="position: relative;">My <strong>Latest <span class="primary-color">Works</span></strong></div>
+
+                        <div class="mb-4 project-cards row row-cols-1 row-cols-md-3 g-4">
+
+
+                            <div class="col">
+                                <div class="mb-4 card card-bg-green position-relative">
+                                    <div class="card-body">
+                                        <div class="index-bg">1</div>
+                                        <i class="bi bi-folder2"></i>
+                                        <h5 class="card-title">Technical Blog</h5>
+                                        <p class="card-text">A full-featured technical blog website, facilitates
+                                            user/admin login, session management, and advanced article browsing.
+                                            Dynamic article suggestion using machine learning (in development).
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end card-footer bg-transparent">
+                                        <a href="https://github.com/suvasish114/blog"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                                <div class="mb-4 card card-bg-blue position-relative">
+                                    <div class="card-body">
+                                        <div class="index-bg">2</div>
+                                        <i class="bi bi-folder2"></i>
+                                        <h5 class="card-title">Image Encryption</h5>
+                                        <p class="card-text">Implement an image encryption method based on
+                                            non-adaptiveness chaos.
+                                            Implement a pseudo random number generator using chaotic map.
+                                            Reduce noise up to 80% created by public channels and, retrieve encrypted
+                                            image.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end card-footer bg-transparent">
+                                        <a href="https://github.com/suvasish114/Non-Adaptive-Partial-Image-Encryption"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                                <div class="mb-4 card card-bg-red position-relative">
+                                    <div class="card-body">
+                                        <div class="index-bg">3</div>
+                                        <i class="bi bi-folder2"></i>
+                                        <h5 class="card-title">Covid-19 Vaccine Notifier</h5>
+                                        <p class="card-text">An android appliation to notify consumers with their nearby
+                                            covid-19 vaccine center details with available vaccine counts.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end card-footer bg-transparent">
+                                        <a href="https://github.com/suvasish114/covid-19-vaccine-notifier"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <div class="mb-5 my-5">
+                                <a href="https://github.com/suvasish114?tab=repositories"><button class="btn btn-dark position-relative">More on Github</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- articles -->
+    <section id="sec5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="mb-0 hello">Articles</div>
+                        <div class="header mb-4">Technical <strong class="primary-color">Writtings</strong></div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="text">Measurement of central tendency in machine learning
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                In statistics, the central tendency is the descriptive summary of a data
+                                                set. The measurement of central tendency means, calculating the single
+                                                most value among the dataset reflects the center of the data
+                                                distribution. This central position of the dataset provides the summary
+                                                of the dataset...
+                                                <br>
+                                                <div class="my-2">
+                                                    <code><a href="">Read Now</a></code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="text">
+                                                    An ultimate Machine Learning guide for beginners
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Machine Learning is a field of inquiry devoted to understanding and
+                                                building methods that 'learn', that is, methods that leverage data to
+                                                improve performance on some tasks. It is seen as a part of artificial
+                                                intelligence. Machine learning algorithms build a model based on sample
+                                                data, known as training data, in order to make predictions or decisions
+                                                without being explicitly programmed to do so...
+                                                <br>
+                                                <div class="my-2">
+                                                    <code><a href="">Read Now</a></code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-5">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-5 my-5">
+                                <a href="https://suvasish114.blogspot.com/"><button class="btn btn-dark">More on Blogger</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <!-- blank -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="quote" class="py-5 position-relative">
+        <div class="quote">
+            <i class="bi bi-quote"></i>
+            <div class="text">Designing & building products that positively <br> impact the lives of users</div>
+            <br><br>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="connect">Let's <span class="primary-light-color">Connect</span></div>
+        <!-- <ul class="nav justify-content-center mb-2">
+            <li class="nav-item"><a class="nav-link"href="#">ACM</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"></a></li>
+        </ul> -->
+        <div class="email mb-4"><a href="mailto:misuvasish114@gmail.com">misuvasish114@gmail.com</a></div>
+        <div class="social-links mb-4">
+            <a href="https://www.linkedin.com/in/suvasish-das-73862b1a0/"><i class="mx-2 bi bi-linkedin"></i></a>
+            <a href="https://github.com/suvasish114?tab=repositories"><i class="mx-2 bi bi-github"></i></a>
+            <a href="https://twitter.com/suvasish114"><i class="mx-2 bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/suvasish114"><i class="mx-2 bi bi-instagram"></i></a>
+        </div>
+        <hr>
+        <div class="copyright mb-2">Copyright 2023 | By Suvasish Das</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
-    <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=t8vTvyF2g0mHFSd_dV2o2r9aTldjh335swYslznYmwc&cl=ffffff&w=a"></script> -->
+    <script src="./src/script.js"></script>
 </body>
 
 </html>

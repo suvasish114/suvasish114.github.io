@@ -1,0 +1,415 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+/* ---- color scheme ---- */
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --lightgray: #F2F3F4;
+    --darkgray: #E5E7E9;
+    --light-black: #424949;
+    --primary: #E74C3C;
+    --primary-light: #EC7063;
+    /* --secondary: ; */
+}
+
+/* ---- common ---- */
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+.bi-arrow-up-circle{
+    z-index: 100;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem !important;
+}
+.bi{
+    color: black;
+    font-size: 20px;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.hello{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    z-index: 10;
+}
+.header{
+    font-family: 'Sriracha', cursive;
+    font-size: 45px;
+    z-index: 10;
+}
+.sub-header{
+    font-family: 'Sriracha', cursive;
+    font-size: 25px;
+}
+.text{
+    font-size: 20px;
+}
+.primary-color,
+.bi:hover,
+a:hover{
+    color: var(--primary);
+}
+.primary-light-color {
+    color: var(--primary-light);
+}
+
+/* ---- button ---- */
+.btn{
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.btn-dark{
+    background-color: var(--black);
+    color: var(--white);
+}
+.btn-light{
+    background-color: var(--darkgray);
+    color: var(--black);
+}
+
+/* ---- progress bar ---- */
+.progress{
+    background-color: #CACFD2;
+}
+.progress .progress-bar{
+    background-color: #626567;
+}
+
+/* ---- navbar ---- */
+nav .nav-item {
+    margin-left: 20px;
+}
+nav .nav-link {
+    color: var(--black);
+}
+nav .nav-link:hover{
+    color: var(--primary);
+}
+nav .navbar-brand{
+    font-size: 3em;
+    font-family: 'Inspiration', cursive;
+}
+nav .navbar-toggler,
+nav .navbar-toggler:hover{
+    border: 0;
+    box-shadow: none;
+}
+nav .navbar-toggler .bi{
+    font-size: 2rem;
+}
+
+/* ---- section 1 ---- */
+
+#sec1{
+    min-height: 100vh;
+}   
+#sec1 .position-relative{
+    min-height: 100vh;
+}
+#sec1 .bg-pattern{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.35;
+    right: 0;
+    top: 0;
+    height: 105vh;
+}
+/* #sec1 .bg-white{
+    position: absolute;
+    background: linear-gradient(to right, white 5%, #ffffff00 80%);
+    z-index: 1;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+    width: 50vh;
+    height: 100vh;
+} */
+#sec1 .content{
+    z-index: 10;
+    margin: 10vh 0;
+}
+
+#sec1 .content .name{
+    font-family: 'Sriracha', cursive;
+    font-size: 57px;
+    line-height: 1.2em;
+}
+#sec1 .content .text{
+    max-width: 600px;
+}
+
+#sec1 .footer{
+    z-index: 10;
+    color: var(--black);
+}
+#sec1 .footer .social{
+    margin-left: 30px;
+    z-index: 10;
+}
+#sec1 .mask{
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(217deg, #CB433500, rgba(255,0,0,0) 10.71%),
+            linear-gradient(127deg, var(--white), rgba(0,255,0,0) 99.71%),
+            linear-gradient(336deg, var(--white), rgba(0,0,255,0) 99.71%);
+}
+#sec1 .dropdown:hover{
+    cursor: pointer;
+}
+
+#sec1 .dropdown .dropdown-menu{
+    border: 0;
+    /* background-color: var(--lightgray); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#sec1 .name .sub-heading{
+    font-size: 2.9rem;
+}
+
+/* ---- section 2 ---- */
+
+#sec2{
+    position: relative;
+    padding: 10em 0;
+    background-color: var(--lightgray);
+}
+#sec2 .content *{ 
+    z-index: 10;
+}
+#sec2 .profile{
+    width: 100%;
+    object-fit: cover;
+    /* filter: grayscale(100%) brightness(110%); */
+    border: 2px solid black;
+}
+#sec2 .bg-pattern{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    opacity: .02;
+    height: 100%;
+    filter: grayscale(100%);
+}
+#sec2 .content .list-group,
+#sec2 .content .list-group .list-group-item{
+    padding: 0;
+    background-color: unset;
+    border: 0;
+}
+
+/* ---- section 3 ---- */
+
+#sec3{
+    position: relative;
+    padding: 10em 0;
+}
+#sec3 .card{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* position: relative; */
+    background-color: var(--lightgray);
+    border: 0;
+    /* width: 300px; */
+    min-height: 300px;
+    font-size: 20px;
+}
+#sec3 .card-body{
+    z-index: 10;
+    padding: 30px;
+}
+#sec3 .card .bi{
+    padding: 5px;
+}
+#sec3 .contact{
+    /* background-color: dodgerblue; */
+    color: unset;
+}
+#sec3 .card img{
+    z-index: 0;
+    /* filter: grayscale(100%); */
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0.1;
+    border-radius: 10px;
+}
+#sec3 .card .bi{
+    color: unset;
+}
+#sec3 .card-footer{
+    border: 0;
+}
+
+
+/* ---- section 4 ---- */
+
+#sec4{
+    background-color: var(--lightgray);
+    position: relative;
+    padding: 10em 0;
+}
+#sec4 .bg-pattern{
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+#sec4 .project-cards .card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    min-height: 300px;
+}
+#sec4 .project-cards .card .card-body{
+    padding: 2em;
+}
+#sec4 .project-cards .card .card-body .card-title{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#sec4 .project-cards .card .card-footer{
+    border: 0;
+    padding: 1.5rem 2.5rem;
+}
+#sec4 .project-cards .card .bi{
+    font-size: 2em;
+    color: white;
+}
+#sec4 .project-cards .card-bg-green{
+    background: linear-gradient(#58D68D, #28B463);
+}
+
+#sec4 .project-cards .card-bg-red{
+    background: linear-gradient(#EC7063, #CB4335);
+
+}
+
+#sec4 .project-cards .card-bg-yellow{
+    background: linear-gradient(#F4D03F, #F1C40F);
+}
+
+#sec4 .project-cards .card-bg-blue{
+    background: linear-gradient(#5DADE2, #2E86C1);
+}
+
+#sec4 .mask{
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(217deg, #CB433500, rgba(255,0,0,0) 10.71%),
+            linear-gradient(127deg, var(--lightgray), rgba(0,255,0,0) 99.71%),
+            linear-gradient(336deg, var(--lightgray), rgba(0,0,255,0) 99.71%);
+}
+#sec4 .index-bg{
+    font-size: 15rem;
+    opacity: 0.1;
+    font-family: 'Mynerve', cursive;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+}
+
+/* ---- section 5 ---- */
+#sec5{
+    min-height: 100vh;
+    padding: 10em 0;
+}
+
+#sec5 .accordion .accordion-item{
+    border: 0;
+    border-bottom: 1px solid var(--darkgray);
+}
+
+#sec5 .accordion-header .accordion-button{
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: unset;
+}
+#sec5 .collapsed {
+    background-color: transparent;
+}
+
+/* quote */
+#quote{
+    text-align: center;
+    background-color: var(--lightgray);
+}
+#quote .bi{
+    z-index: 0;
+    font-size: 5rem;
+    color: var(--darkgray);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+#quote .text{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-family: 'Mynerve', cursive;
+}
+
+/* footer */
+#footer {
+    padding: 2rem 0;
+    background-color: var(--light-black);
+    color: var(--white);
+    text-align: center;
+}
+#footer .copyright {
+    font-size: 14px;
+    color: #989898;
+}
+#footer .social-links .bi,
+#footer .nav-item .nav-link{
+    color: var(--white);
+}
+#footer .connect{
+    font-size: 3rem;
+    font-family: 'Sriracha', cursive;
+}
+#footer .email,
+#footer .nav,
+#footer .social-links{
+    color: #CACFD2;
+}
+
+/* media quary */
+@media only screen and (max-width: 768px) {
+    #sec1 .scroll,
+    #sec1 .findmeon{
+        display: none;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
