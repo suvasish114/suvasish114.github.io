@@ -304,6 +304,8 @@ nav .navbar-toggler .bi{
     font-size: 2em;
     color: white;
 }
+
+/* card background */
 #sec4 .project-cards .card-bg-green{
     background: linear-gradient(#58D68D, #28B463);
 }
@@ -314,11 +316,15 @@ nav .navbar-toggler .bi{
 }
 
 #sec4 .project-cards .card-bg-yellow{
-    background: linear-gradient(#F4D03F, #F1C40F);
+    background: linear-gradient(#F5B041, #F39C12);
 }
 
 #sec4 .project-cards .card-bg-blue{
     background: linear-gradient(#5DADE2, #2E86C1);
+}
+
+#sec4 .project-cards .card-bg-pink{
+    background: linear-gradient(#58D68D, #28B463);
 }
 
 #sec4 .mask{
