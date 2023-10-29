@@ -388,6 +388,12 @@ nav .navbar-toggler .bi{
 }
 
 /* footer */
+
+#footer .sayhi .btn{
+    background-color: var(--primary);
+    color: var(--whites);
+}
+
 #footer {
     padding: 2rem 0;
     background-color: var(--light-black);
