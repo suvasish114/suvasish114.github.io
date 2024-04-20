@@ -1,0 +1,19 @@
+---
+title: base
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+    <title>Suvasish Das | {{ page.title }}</title>
+    {% include headerincludes.html %}
+</head>
+
+<body>
+    <a href="#navbar"><i style="color: var(--red); font-size: 2rem; position: fixed; right: 20px; bottom: 20px;" class="bi bi-arrow-up"></i></a>
+    <div id="navbar">{% include views/navbar.html %}</div>
+    {{ content }}
+    <div id="footer">{% include views/footer.html %}</div>
+    {% include bodyincludes.html %}
+</body>
+</html>

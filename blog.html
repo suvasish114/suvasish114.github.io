@@ -1,0 +1,33 @@
+---
+title: blog
+subtitle: A collection of long form writting and tutorials - mostly about algorithms and intelligent systems.
+layout: page
+---
+
+<div class="row row-cols-1 row-cols-md-3 g-4" id="blog">
+    {% for post in site.posts %}
+    <div class="col">
+        <div class="card mb-2 hvr-underline-from-lefta">
+            <div class="card-body">
+                <div class="mb-2 category">
+                    <i class="bi bi-sticky mb-2"></i>
+                    <span class="mb-2">{{ post.category}}</span>
+                </div>
+                <div class="card-title mb-3">
+                    <a href="{{ post.url }}">{{ post.title}}</a>
+                </div>
+                <div class="card-subtitle mb-3">
+                    {{ post.subtitle }}
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                    <div class="date">{{ post.date | date: "%-d %b %Y" }}</div>
+                    <a href="{{ post.url }}"><i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
