@@ -7,7 +7,7 @@ that positively impact the lives of users. I don't associate myself with specifi
 helped me be a quick learner and concentrate more on solving the problem at hand.
 
 - My email: `suvasish114 [AT] gmail [DOT] com`
-- Download my [resume](/resume.pdf)
+- Download my [resume](https://docs.google.com/document/d/1SqeaGomM8mOWTa1eXDHmk4BIC65DJAfTGBKAwCgPMtU/edit?usp=sharing)
 - View [my latest works](/works.html)
 
 <br>
@@ -17,11 +17,11 @@ helped me be a quick learner and concentrate more on solving the problem at hand
 
 |||
 |-|-|
-|`2024`|Pursuing M.Sc in Computer Science at WBSU|
+|`2024`|Pursuing M.Sc in Computer Science at [WBSU](https://www.wbsu.ac.in/)|
 ||Score: CGPA = 9.82 (till sem-II)|
-|`2022`|Completed B.Sc in Computer Science from BRSNC|
+|`2022`|Completed B.Sc in Computer Science from [BRSNC](https://www.brsnc.in/)|
 ||Score: CGPA = 9.51|
-|`2018`|Completed Higher Secondary with PCM under WBCHSE|
+|`2018`|Completed Higher Secondary with PCM under [WBCHSE](https://wbchse.wb.gov.in/)|
 ||Overall percentage = 72%|
 |`2016`|Completed Secondary Education from [WBBSE](https://wbbse.wb.gov.in)|
 ||Overall percentage = 86.41%|
@@ -35,3 +35,4 @@ helped me be a quick learner and concentrate more on solving the problem at hand
 |-|-|
 |`03.2024`|GATE qualified with score 469|
 |`12.2022`|UGC-NET qualified for assistant professor|
+|`12.2022`|Selected for DRDO - DAIT OTCC AI Professional|
