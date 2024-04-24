@@ -7,6 +7,7 @@ category: Self Journal
 tags: [interview, nlp, phd]
 permalink: /blog/:title:output_ext
 updated_on: 24 Apr 2024
+filename: 2024-04-20-PhD-interview-experience-at-IIT-Gandhinagar-for-summar-drive.md
 ---
 
 I was motivated to pursue PhD during my masters thesis work on NLP. I applied for regular PhD program at IIT Gandhinagar, though I didn't have any fellowships. I have been shortlisted for the first round. The interview was completely virtual and conducted via zoom meeting. My interview was scheduled on 20 april 2024 at 12:30 PM. There was two panelist in the meeting (i.e. `panelist1` was Dr. [Krishna Prasad Miyapuram](https://cogs.iitgn.ac.in/team/krishna-prasad-miyapuram/) and `panelist2` was Dr. [Shanmuganathan Raman](https://people.iitgn.ac.in/~shanmuga/)). The interview was for 5 to 10 minutes.
