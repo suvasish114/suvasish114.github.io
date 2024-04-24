@@ -410,3 +410,14 @@ td{
 .toc_list li:hover{
     background-color: var(--color2);
 }
+
+
+#gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#gallery td{
+    width: 50%;
+    height: 400px;
+}

@@ -9,6 +9,7 @@ helped me be a quick learner and concentrate more on solving the problem at hand
 - My email: `suvasish114 [AT] gmail [DOT] com`
 - Download my [resume](https://docs.google.com/document/d/1SqeaGomM8mOWTa1eXDHmk4BIC65DJAfTGBKAwCgPMtU/edit?usp=sharing)
 - View [my latest works](/works.html)
+- Some best [moments](/gallery.html) of my life
 
 <br>
 
