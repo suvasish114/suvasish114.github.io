@@ -1,19 +1,43 @@
----
-title: base
----
 <!doctype html>
 <html lang="en">
+
 <head>
     {% include meta.html %}
-    <title>Suvasish Das | {{ page.title }}</title>
-    {% include headerincludes.html %}
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
 </head>
 
 <body>
-    <a href="#navbar"><i style="color: var(--red); font-size: 2rem; position: fixed; right: 20px; bottom: 20px;" class="bi bi-arrow-up"></i></a>
-    <div id="navbar">{% include views/navbar.html %}</div>
-    {{ content }}
-    <div id="footer">{% include views/footer.html %}</div>
-    {% include bodyincludes.html %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                {% include navbar.html %}
+                <div class="conatainer" id="main">
+                    {{ content }}
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div id="footer">{% include footer.html %}</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,27 +1,15 @@
 ---
-title: home
 layout: base
 ---
-<div id="titlerow">
-<div class="container">
-    <!-- <div class="mb-3">{{ page.date | date: "%-d %b %Y" }}</div> -->
-    <div class="mb-3">
-    <div class="title">Hi, My Name Is Suvasish</div>
-    <div class="title">An Enthusiast In NLP And Deep Learning</div>
-    </div>
-    <div class="subtitle mb-3">Designing & Building Products That Positively Impact The Lives Of Users</div>
-</div>
-</div>
-<hr>
 
-<div class="container py-3">
+<div class="container">
     <div class="row">
-        <div class="col-md-4">
-            {% include views/sidebar/index.html %}
+        <div class="col-md-3">
+            <img class="profile mb-5" src="/assets/passport.jpg" alt="">
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-7">
-            {{content}}
+        <div class="col-md-8">
+            {{ content }}
         </div>
     </div>
 </div>
