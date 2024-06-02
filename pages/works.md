@@ -1,8 +1,8 @@
 ---
-layout: work
+layout: page
 author: "Suvasish Das"
 title: "Work"
-thumbnail: "/assets/passport.jpg"
+thumbnail: "/assets/img/gradientascent.jpg"
 description: "I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact the lives of users."
 ---
 

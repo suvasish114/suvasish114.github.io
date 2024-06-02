@@ -1,9 +1,9 @@
 ---
-layout: home
+layout: page
 author: "Suvasish Das"
 title: "Home"
 permalink: "/"
-thumbnail: "/assets/passport.jpg"
+thumbnail: "/assets/img/passport.jpg"
 description: "I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact the lives of users."
 ---
 

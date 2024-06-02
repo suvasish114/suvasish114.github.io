@@ -22,8 +22,8 @@ title: Suvasish Das
 email: suvasish114@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact the lives of users.
-baseurl: "suvasish114.github.io/" # the subpath of your site, e.g. /blog
-url: "suvasish114.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://suvasish114.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
