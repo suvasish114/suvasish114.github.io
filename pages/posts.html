@@ -1,0 +1,25 @@
+---
+layout: page
+author: "Suvasish Das"
+title: "Blog"
+thumbnail: "/assets/img/banglaHandwritten.png"
+description: "I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact the lives of users."
+---
+
+<h3>Posts</h3>
+
+<table>
+  <thead>
+
+  </thead>
+  <tbody>
+    {% for post in site.posts %}
+    <tr>
+      <td>
+        <code>{{ post.date | date: "%b.%y" }}</code>
+      </td>
+      <td>{{ post.title | capitalize }}. [<a href="{{ post.url }}">read</a>]</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
