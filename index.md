@@ -20,7 +20,7 @@ I've completed my Bachelor in Computer Science from [Barrackpore Rastraguru Sure
 
 - `03.2024:` GATE qualified with a score of 469 (paper: CS)
 - `12.2022:` UGC-NET qualified for assistant professor
-- `12.2022:` Selected for DRDO - DAIT OTCC AI Professional
+- `12.2022:` Selected for DRDO - DIAT OTCC AI Professional
 
 ----
 
