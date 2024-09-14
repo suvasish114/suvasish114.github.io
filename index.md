@@ -2,7 +2,7 @@
 layout: home
 author: "Suvasish Das"
 type: "landing"
-title: "A passoniate learner and Deep Learning enthusiast, Looking for opportunities in Research & Development"
+title: "A passionate learner and Deep Learning enthusiast, Looking for opportunities in Research & Development"
 permalink: "/"
 thumbnail: "/assets/img/passport.jpg"
 description: "I'm Suvasish Das, an M.Sc Computer Science student. Like to design & build products that positively impact the lives of users."
