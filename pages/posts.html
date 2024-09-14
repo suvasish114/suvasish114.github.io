@@ -1,25 +1,30 @@
 ---
-layout: page
+layout: base
 author: "Suvasish Das"
 title: "Blog"
 thumbnail: "/assets/img/banglaHandwritten.png"
-description: "I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact the lives of users."
+description: "I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact
+the lives of users."
 ---
 
-<h3>Posts</h3>
 
-<table>
-  <thead>
-
-  </thead>
-  <tbody>
-    {% for post in site.posts %}
-    <tr>
-      <td>
-        <code>{{ post.date | date: "%b.%y" }}</code>
-      </td>
-      <td>{{ post.title | capitalize }}. [<a href="{{ post.url }}">read</a>]</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  {% for post in site.posts %}
+  <div class="col">
+    <div class="card">
+      <img
+        src="https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title | capitalize }}</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <div class="d-flex justify-content-between">
+          <div class="date">{{ post.date | date: "%b.%y" }}</div>
+          <a href="{{ post.url }}"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

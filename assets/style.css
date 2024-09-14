@@ -1,127 +1,113 @@
-/* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-/* bootstrap icons */
+/* bootstrap font */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* font-family: "Playfair Display", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* font-family: "Open Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font-family: "Fira Code", monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* common */
+:root {
+    --primary-black: #000000;
+    --primary-white: #FFFFFF;
+    --secondary-black: ;
+    --secondary-white: ;
+    --highlight: #9BEC00;
+    --light-gray: #e5e7e9;
+}
 
 body {
-    font-family: "Tinos", serif;
+    font-size: medium;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-black);
+    font-family: "Playfair Display", serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code,
+.date {
+    font-family: "Fira Code", monospace;
+    /* color: var(--primary-black); */
+}
+
+.marker {
+    background-color: var(--highlight);
+    padding: 0 5px;
+}
+
+.sec-title {
+    border-top: 1px solid gray;
+    padding: 10px 0;
+}
+
+.badge {
     font-weight: normal;
-    font-style: normal;
-    font-size: 16px;
-    color: #000000;
+    border-radius: 0;
+    background-color: blue;
+}
+.main{
+    margin-bottom: 5rem;
+    min-height: 60vh;
 }
 
-a{
-    color: #0000FF;
+/* card */
+.card{
+    border: none;
+    background-color: var(--light-gray);
+    color: var(--primary-black);
 }
-
-/* navbar */
-.navbar{
+.card-footer{
+    border: none;
+}
+.card .bi{
+    font-size: 1.5rem;
+    color: gray;
+}
+.card-title{
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
-.nav-link{
-    color: #000000;
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+/* footer */
+.footer {
+    padding: 2rem 0;
+    padding-bottom: 5rem;
+    background-color: var(--light-gray);
 }
 
-.navbar-toggler{
-    border: none;
-    z-index: 1000;
-    box-shadow: none;
-}
-.navbar-toggler:hover{
-    box-shadow: none;
-    border: none;
+.footer a {
+    color: var(--primary-black);
 }
 
-table{
-    margin-bottom: 1rem;
-}
-td{
-    vertical-align: top;
-    padding-right: 10px;
-}
-#works thead th{
-    min-height: 0px;
-    height: 0px;
-    line-height: 0px;
-}
-
-.profile{
-    width: 100%;
-}
-
-ul{
-    padding: 0 16px;
-}
-
-code{
-    color: #2F4F4F;
-}
-
-#footer{
-    background-color: #6A67CE;
-    color: #FFFFFF;
-    padding: 1rem 0;
-    padding-bottom: 3rem;
-    margin-top: 3rem;
-}
-#footer a{
-    color: #FFFFFF;
-}
-#main{
-    min-height: 80vh;
-}
-
-#posts img{
-    padding: 10px 0;
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#posts em{
-    color: gray;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-
-blockquote{
-    border-left: 2px solid gray;
-    background-color: #E5E7E9;
-    padding: 0.5rem;
-    position: relative;
-}
-blockquote::before{
-    content: "Note";
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: white;
-    background-color: gray;
-    padding: 0 4px;
-}
-
-.highlighter-rouge pre{
-    border: 1px solid gray;
-    padding: 0.5rem;
-}
-
-#pushbar{
-    display: none;
-}
-
-/* media quary */
-@media screen and (max-width: 991px) {
-    #pushbar{
-        border: none;
-        display: block;
-    }
+.navright {
+    display: flex;
+    justify-content: flex-end;
 }

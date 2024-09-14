@@ -2,18 +2,9 @@
 layout: base
 ---
 
-<div id="posts" class="container position-relative">
-    <div class="my-3">
-        <span><a href="/">Home</a></span>
-        <span> / </span>
-        <span><a href="/pages/posts.html">Posts</a></span>
+<div class="row">
+    <div class="col-md-8">
+        <div>{{ content }}</div>
     </div>
-    <div class="row">
-        <div class="col-md-10">
-            <code>{{ page.date | date: "%b.%y" }}</code>
-            <h1 style="text-transform: capitalize;">{{ page.title}}</h1>
-            <div class="my-5">{{ content }}</div>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
+    <div class="col-md-4"></div>
 </div>
