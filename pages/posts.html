@@ -12,11 +12,10 @@ the lives of users."
   {% for post in site.posts %}
   <div class="col">
     <div class="card">
-      <img
-        src="https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg"
-        class="card-img-top" alt="...">
       <div class="card-body">
+        <i class="bi bi-tag"></i>
         <h5 class="card-title">{{ post.title | capitalize }}</h5>
+        <p class="card-text">{{ post.subtitle }}</p>
       </div>
       <div class="card-footer bg-transparent">
         <div class="d-flex justify-content-between">
