@@ -1,0 +1,28 @@
+<section class="landing py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="mb-5">
+                    {% if page.type == "landing" %}
+                    <h5>👋 Hello World 🌎 I'm <span class="marker">Suvasish</span></h5>
+                    {% endif %}
+                    <h1 class="mb-3">{{ page.title }}</h1>
+                    <h5 class="mb-3">{{ page.subtitle }}</h5>
+
+                    {% if page.layout == "post" %}
+                    <div class="mb-3">
+                        <span>{{ page.date | date: "%b.%Y"}}</span>
+                        <i class="bi bi-dot"></i>
+                        <a href="{{ page.author[1] }}"><span>{{ page.author[0] }}</span></a>
+                        <i class="bi bi-dot"></i>
+                        <a href=""><span>{{ page.tag }}</span></a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="sideimage" src="{{ page.sideimage }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>

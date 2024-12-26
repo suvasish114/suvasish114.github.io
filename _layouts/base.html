@@ -26,6 +26,12 @@
     <!-- font-family: "Fira Code", monospace; -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 
+    <!-- font-family: "Open Sans", serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- pushbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/highlight.css">
@@ -37,10 +43,18 @@
 
 <body>
 
-    <section class="landing py-5">
+    {% include navbar.html %}
+    {% include landing.html %}
+
+    <!-- <section class="landing py-5">
         <div class="container">
             <div class="row">
+                {% if page.layout == "post" %}
+                <div class="col-md-2"></div>
                 <div class="col-md-8">
+                {% else %}
+                <div class="col-md-10">
+                {% endif %}
                     <div class="mb-5">
                         {% if page.type == "landing" %}
                         <h5>👋 I'm <span class="marker">Suvasish Das.</span></h5>
@@ -59,7 +73,6 @@
                         {% endif %}
                     </div>
                 </div>
-                <div class="col-md-2"></div>
                 <div class="col-md-2">
                     <div class="d-flex flex-row-reverse">
                         <div class="mb-5">
@@ -72,7 +85,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="main">
         <div class="container">
@@ -84,6 +97,15 @@
     <footer class="footer">
         {% include footer.html %}
     </footer>
+
+    <!-- pushbar -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
 
     <!-- matjax -->
     <script type="text/x-mathjax-config">

@@ -10,11 +10,14 @@
 /* font-family: "Fira Code", monospace; */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+/* font-family: "Open Sans", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* common */
 :root {
     --primary-black: #000000;
     --primary-white: #FFFFFF;
-    --secondary-black: ;
+    --secondary-black: #1E1E1E;
     --secondary-white: ;
     --highlight: #9BEC00;
     --light-gray: #e5e7e9;
@@ -31,7 +34,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+thead,
+#post img+em {
     color: var(--primary-black);
     font-family: "Playfair Display", serif;
 }
@@ -49,10 +54,38 @@ a:hover {
     text-decoration: underline;
 }
 
-code,
 .date {
     font-family: "Fira Code", monospace;
-    /* color: var(--primary-black); */
+    background-color: var(--light-gray);
+    color: black;
+    border-radius: 5px;
+    padding: 4px;
+    text-wrap: wrap;
+    width: fit-content;
+    text-align: right;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 10px;
+    max-height: fit-content;
+}
+
+.date .month {
+    /* padding: 2px 4px; */
+    /* border-bottom: 1px solid gray; */
+}
+
+.date .year {
+    /* padding: 2px 4px; */
+    font-size: 16px;
+}
+
+.news-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.news-items div:last-child {
+    border-bottom: none;
 }
 
 .marker {
@@ -70,13 +103,32 @@ code,
     border-radius: 0;
     background-color: blue;
 }
-.main{
+
+.main {
     margin-bottom: 5rem;
     min-height: 60vh;
 }
 
+table {
+    margin: 2rem 0;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+thead {
+    border-bottom: 2px solid lightgray;
+}
+
+tr {
+    border-bottom: 1px solid lightgray;
+}
+
 /* card */
-.card{
+.card {
     border: none;
     border-radius: 0;
     background-color: var(--light-gray);
@@ -84,51 +136,141 @@ code,
     min-height: 350px;
 }
 
-.card-footer{
+.card-footer {
     border: none;
 }
-.card .bi{
+
+.card .bi {
     font-size: 1.5rem;
     color: gray;
 }
-.card-title{
+
+.card-title {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-.card-img-top{
+
+.card-img-top {
     height: 150px;
     object-fit: cover;
     border: none;
     border-radius: 0;
 }
+
 /* footer */
 .footer {
     padding: 2rem 0;
     padding-bottom: 5rem;
-    background-color: var(--light-gray);
+    background-color: var(--secondary-black);
+    color: var(--primary-white);
 }
 
 .footer a {
-    color: var(--primary-black);
+    color: var(--primary-white);
+    text-decoration: underline;
 }
 
 .navright {
     display: flex;
     justify-content: flex-end;
 }
-pre{
+
+pre {
     border: 1px solid lightgray;
     padding: 5px;
+    position: relative;
 }
-blockquote{
+
+blockquote {
     background-color: rgb(223, 223, 255);
     border-left: 2px solid blue;
     padding: 10px;
+    margin: 2rem 0;
+    position: relative;
 }
-#post code{
+
+#post code {
     color: black;
 }
-#post h2, h3{
+
+#post h2,
+#post h3,
+#post h4 {
     margin-bottom: 1rem;
     margin-top: 2rem;
+}
+
+#post * {
+    max-width: 100%;
+}
+
+#post img {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+#post img+em::before {
+    content: "Figure: ";
+}
+
+#post img+em {
+    padding-top: 5px;
+    color: gray;
+    display: block;
+    text-align: center;
+}
+
+#post img+em a {
+    color: unset;
+    text-decoration: underline;
+}
+
+#post .thumbnail {
+    width: 100%;
+    max-height: 720px;
+    object-fit: cover;
+}
+
+#post a code {
+    color: blue;
+}
+
+.footer .quote {
+    font-size: 2rem;
+    opacity: 0.3;
+    font-family: "Handlee", serif;
+}
+
+.col9 img {
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.largefont {
+    font-size: 2rem;
+}
+
+.menubutton{
+    display: none;
+}
+
+
+/* media query */
+@media only screen and (max-width: 768px) {
+    .navbar .navbar-nav{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+    .profile{
+        max-width: 70%;
+    }
+    .sideimage{
+        display: none;
+    }
 }

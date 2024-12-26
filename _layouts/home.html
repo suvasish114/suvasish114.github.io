@@ -4,7 +4,7 @@ layout: base
 
 <div class="row">
     <div class="col-md-3">
-        <img class="mb-5" src="/assets/img/passport.jpg" alt="">
+        <img class="mb-5 profile" src="/assets/img/passport.jpg" alt="">
         <div class="mb-5">
             <p><a href="https://x.com/suvasish114"><i class="bi bi-twitter-x"></i> Twitter</a></p>
             <p><a href="https://www.linkedin.com/in/suvasish114/"><i class="bi bi-linkedin"></i> Linkedin</a></p>
@@ -17,30 +17,55 @@ layout: base
             <h5 class="sec-title">About</h5>
             <p>{{ content }}</p>
             <p>
-                <a href="https://docs.google.com/document/d/1eGJ7zjzwFpV0yTHf_5P6gGzmO95D025k7QPa-OSZdBs/edit?usp=sharing"><span class="badge">Resume</span></a>
+                <a
+                    href="https://docs.google.com/document/d/1eGJ7zjzwFpV0yTHf_5P6gGzmO95D025k7QPa-OSZdBs/edit?usp=sharing"><span
+                        class="badge">Resume</span></a>
                 <a href="mailto:suvasish114@gmail.com"><span class="badge">Email</span></a>
             </p>
         </div>
+        <!-- <div class="mb-5">
+            <h5 class="sec-title">Experience</h5>
+            <div class="d-flex justify-content-between">
+                <div><b>Teaching Assistant</b><br>Department of CSE at IIT Bombay</div>
+                <div>2025 - ongoing</div>
+            </div>
+            <div class="py-2"><i>Assigned to coordinate with students on coursworks, evaluation grades and organizing various
+                    departmental activities, etc.</i></div>
+        </div> -->
+
         <div class="mb-5">
             <h5 class="sec-title">Education</h5>
-            <p>M.Sc in Computer Science | CGPA: 9.78<br>West Bengal State University, Barasat, WB, India</p>
-            <p>B.Sc in Computer Science | CGPA: 9.51<br>Barrackpore Rastraguru Surendranath College,
-                Barrackpore, WB, India</p>
+            <!-- <div class="d-flex justify-content-between">
+                <div><b>PhD in Intelligent Systems</b> <br>Indian Institute of Technology Bombay, Powai, MH, India</div>
+                <div>ongoing</div>
+            </div>
+            <hr> -->
+            <div class="d-flex justify-content-between">
+                <div><b>M.Sc in Computer Science</b> | CGPA: 9.78 <br>West Bengal State University, Barasat, WB, India
+                </div>
+                <div>2024</div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <div><b>B.Sc in Computer Science</b> | CGPA: 9.51<br>Barrackpore Rastraguru Surendranath College,
+                    Barrackpore, WB, India</div>
+                <div>2022</div>
+            </div>
         </div>
 
     </div>
     <div class="col-md-3">
         <div class="mb-5">
             <h5 class="sec-title">News</h5>
-            <p> <code class="date">Oct.2024</code> <br>UGC-NET qualified for Assistant professor and admission to PhD with 95.16 percentile among 29K candidates</p>
-            <p> <code class="date">Jul.2024</code> <br>Secure 1st position in M.Sc in the department among 15 students</p>
-            <p> <code class="date">Mar.2024</code> <br>GATE qualified with a score of 469 (paper: CS)</p>
-            <p> <code class="date">Dec.2022</code> <br>UGC-NET qualified for assistant professor</p>
-            <p> <code class="date">Dec.2022</code> <br>Selected for DRDO - DIAT OTCC AI Professional</p>
+            <div class="news-items">
+                {% include news.html %}
+            </div>
         </div>
         <div class="mb-5">
             <h5 class="sec-title">Talks</h5>
-            <p> <code class="date">Apr.2024</code> <br>Annual debate competition on “Why Books When There Is AI” <a href="https://docs.google.com/document/d/1z4WYU_YB_NQyOBKPs6pkL26TPjT3JtnjY1_L1Ce90rE/edit?usp=sharing"><i class="bi bi-box-arrow-up-right"></i></a></p>
+            <div class="news-items">
+                {% include talks.html %}
+            </div>
         </div>
     </div>
 </div>
