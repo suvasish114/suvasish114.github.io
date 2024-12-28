@@ -3,36 +3,39 @@ layout: base
 ---
 
 <div id="post">
-<div class="row mb-5">
-    <div class="position-relative">
-        <img src="{{ page.thumbnail }}" alt="" class="thumbnail">
+    <div class="row mb-5">
+        <div class="position-relative">
+            <img src="{{ page.thumbnail }}" alt="" class="thumbnail">
+        </div>
     </div>
-    
+
+    <div class="row mb-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div>{{ content }}</div>
+        </div>
+        <div class="col-md-2">
+            {% include ad.html %}
+            {% include recentpost.html %}
+        </div>
+    </div>
 </div>
 
-<div class="row mb-5">
-    <div class="col-md-9">
-        <div>{{ content }}</div>
-    </div>
-    <div class="col-md-3">
-        {% include ad.html %}
-        {% include recentpost.html %}
-    </div>
-</div>
-</div>
 
 <div class="row mb-5">
-    <div class="col-md-9">
-    <div id="disqus_thread"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div id="disqus_thread"></div>
     </div>
-    <div class="col-md-3"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://suvasish114-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="col-md-2"></div>
+    <script>
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://suvasish114-github-io.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
 </div>

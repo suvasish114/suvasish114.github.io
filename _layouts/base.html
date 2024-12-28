@@ -46,47 +46,6 @@
     {% include navbar.html %}
     {% include landing.html %}
 
-    <!-- <section class="landing py-5">
-        <div class="container">
-            <div class="row">
-                {% if page.layout == "post" %}
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                {% else %}
-                <div class="col-md-10">
-                {% endif %}
-                    <div class="mb-5">
-                        {% if page.type == "landing" %}
-                        <h5>👋 I'm <span class="marker">Suvasish Das.</span></h5>
-                        {% endif %}
-                        <h1 class="mb-3">{{ page.title }}</h1>
-                        <h5 class="mb-3">{{ page.subtitle }}</h5>
-
-                        {% if page.layout == "post" %}
-                        <div class="mb-3">
-                            <span>{{ page.date | date: "%b.%Y"}}</span>
-                            <i class="bi bi-dot"></i>
-                            <a href="{{ page.author[1] }}"><span>{{ page.author[0] }}</span></a>
-                            <i class="bi bi-dot"></i>
-                            <a href=""><span>{{ page.tag }}</span></a>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="mb-5">
-                            <p class="navright"><a href="/">Home <i class="bi bi-arrow-right"></i></a></p>
-                            <p class="navright"><a href="/pages/works.html">Projects <i
-                                        class="bi bi-arrow-right"></i></a></p>
-                            <p class="navright"><a href="/pages/posts.html">Blog <i class="bi bi-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section class="main">
         <div class="container">
             {{ content }}

@@ -174,23 +174,23 @@ tr {
     display: flex;
     justify-content: flex-end;
 }
-
+.highlight{
+    border-radius: 10px;
+}
 pre {
-    border: 1px solid lightgray;
-    padding: 5px;
+    /* border: 1px solid lightgray; */
+    padding: 1rem;
     position: relative;
 }
 
 blockquote {
-    background-color: rgb(223, 223, 255);
-    border-left: 2px solid blue;
-    padding: 10px;
+    background-color: var(--light-gray);
+    border-left: 3px solid var(--secondary-black);
+    padding: 1rem;
     margin: 2rem 0;
     position: relative;
-}
-
-#post code {
-    color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #post h2,
