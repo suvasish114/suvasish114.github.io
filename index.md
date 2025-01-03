@@ -2,7 +2,7 @@
 layout: home
 author: "Suvasish Das"
 type: "landing"
-title: "A passionate learner and Deep Learning enthusiast, pursuing full-time PhD at Indian Institute of Technology Bombay"
+title: "A passionate learner and Deep Learning enthusiast, pursuing fulltime PhD at Indian Institute of Technology Bombay"
 permalink: "/"
 thumbnail: "/assets/img/passport.jpg"
 sideimage: "/assets/img/sideimage.jpg"
