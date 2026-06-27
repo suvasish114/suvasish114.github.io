@@ -1,75 +1,24 @@
 ---
 layout: base
 ---
-
+<div class="home">
 <div class="row">
-    <div class="col-md-3">
-        <img class="mb-5 profile" src="/assets/img/passport.jpg" alt="">
-        <div class="mb-5">
-            <p><a href="https://x.com/suvasish114"><i class="bi bi-twitter-x"></i> Twitter</a></p>
-            <p><a href="https://www.linkedin.com/in/suvasish114/"><i class="bi bi-linkedin"></i> Linkedin</a></p>
-            <p><a href="https://www.instagram.com/suvasish114/"><i class="bi bi-instagram"></i> Instagram</a></p>
-            <p><a href="https://github.com/suvasish114"><i class="bi bi-github"></i> Github</a></p>
-            <p><a href="https://calendar.google.com/calendar/embed?src=suvasish114%40gmail.com&ctz=Asia%2FKolkata&mode=WEEK"><i class="bi bi-calendar"></i> My Calender</a></p>
+    <div class="col-md-8 order-2 order-md-1">
+        <p>I am a first-year Ph.D. student in the Department of <a href="https://cseiitgn.com/">Computer Science and Engineering</a> at <a href="https://iitgn.ac.in/">Indian Institute of Technology Gandhinagar (IITGN)</a>. My key research interest lies in the field of reasoning of Deep Learning models and Multimodal AI. I have completed Masters in Computer Science from <a href="https://wbsu.ac.in/web/">West Bengal State University</a> in the year of 2024, where I have been advised by Prof. <a href="https://wbsu.ac.in/web/faculty/dr-rajat-pandit/">Rajat Pandit</a> and Prof. <a href="https://sites.google.com/site/sudipnaskar/">Sudip Kumar Naskar</a>. I have completed my Bachelor’s in Computer Science from <a href="https://www.brsnc.in/">Barrackpore Rastraguru Surendranath College</a> in the year of 2022, where I worked under the supervision of Prof. <a href="https://scholar.google.co.in/citations?user=vhkRGncAAAAJ&hl=en">Sukalyan Som</a>.</p>
+        <div>
+        <i class="bi bi-envelope-fill"></i> <a href="mailto:suvasish114@gmail.com">Email</a> <i class="bi bi-dot"></i>
+        <!-- <i class="bi bi-file-earmark-person"></i> <a href="">CV</a> <i class="bi bi-dot"></i> -->
+        <!-- <i class="bi bi-person-circle"></i> <a href="">Bio</a> <i class="bi bi-dot"></i> -->
+        <!-- <i class="bi bi-mortarboard-fill"></i> <a href="">Scholar</a> <i class="bi bi-dot"></i> -->
+        <i class="bi bi-linkedin"></i> <a href="linkedin.com/in/suvasish114/">LinkedIn</a> <i class="bi bi-dot"></i>
+        <i class="bi bi-github"></i> <a href="https://github.com/suvasish114">Github</a> 
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="mb-5">
-            <h5 class="sec-title">About</h5>
-            <p>{{ content }}</p>
-            <p>
-                <a
-                    href="/assets/cv.pdf"><span
-                        class="badge">Resume</span></a>
-                <a href="mailto:suvasish114@gmail.com"><span class="badge">Email</span></a>
-            </p>
-        </div>
-        
-        <div class="mb-5">
-            <h5 class="sec-title">Experience</h5>
-            <div class="d-flex justify-content-between">
-                <div><b>Teaching Assistant</b><br>Department of CSE at IIT Bombay</div>
-                <div>Jul.2025 - Dec.2025</div>
-            </div>
-            <div class="py-2">
-                <i>CS101: Computer Programming and Utilization with Prof. Rohit Gurjar [<a href="https://www.cse.iitb.ac.in/~cs101/">FALL2025</a>]</i><br>
-                <i>CS217/240: Artificial Intelligence and Machine Learning (w/ Lab) with Prof. Sunita Sarawagi [<a href="https://docs.google.com/document/d/18avFbnSajyMcXUlpOp_7HXaFC6z7GDZ2GuTtMzq-WV8/edit?usp=sharing">SPRING2026</a>]</i>
-            </div>
-        </div>
+    <div class="col-md-4 order-1 order-md-2">
+        <img src="https://suvasish114.github.io/assets/img/passport.jpg" class="profile img-fluid1" alt="Image">
+    </div>
+</div>
 
-        <div class="mb-5">
-            <h5 class="sec-title">Education</h5>
-            <div class="d-flex justify-content-between">
-                <div><b>PhD in Intelligent Systems</b> <br>Indian Institute of Technology Bombay, Powai, MH, India</div>
-                <div>ongoing</div>
-            </div>
-            <hr>
-            <div class="d-flex justify-content-between">
-                <div><b>M.Sc in Computer Science</b> | CGPA: 9.78 <br>West Bengal State University, Barasat, WB, India
-                </div>
-                <div>2024</div>
-            </div>
-            <hr>
-            <div class="d-flex justify-content-between">
-                <div><b>B.Sc in Computer Science</b> | CGPA: 9.51<br>Barrackpore Rastraguru Surendranath College,
-                    Barrackpore, WB, India</div>
-                <div>2022</div>
-            </div>
-        </div>
+{{ content }}
 
-    </div>
-    <div class="col-md-3">
-        <div class="mb-5">
-            <h5 class="sec-title">News</h5>
-            <div class="news-items">
-                {% include news.html %}
-            </div>
-        </div>
-        <div class="mb-5">
-            <h5 class="sec-title">Talks</h5>
-            <div class="news-items">
-                {% include talks.html %}
-            </div>
-        </div>
-    </div>
 </div>
