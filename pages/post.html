@@ -1,0 +1,30 @@
+---
+layout: page
+---
+
+<img src="https://azsocialmediawiz.com/wp-content/uploads/shutterstock_78542932.jpg" alt="" style="width: 200px;">
+
+<br><br>
+
+{% for post in site.posts %}
+    <a href="{{ post.url }}">
+        <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-2">
+                <div class="col-md-5">
+                <img src="{{ post.thumbnail }}" class="card-img card-img-top" alt="{{ post.title }}">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ post.title | capitalize }}</h3>
+                        <p class="card-text">{{ post.subtitle }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="date">{{ post.date | date: "%d %b, %Y" }}</span>
+                        <i class="bi bi-dot mx-2"></i> 
+                        <span>{{ post.categories }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+{% endfor %}

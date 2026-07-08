@@ -2,4 +2,17 @@
 layout: base
 ---
 
-this is post layout
+<div class="my-5 post">
+
+    <div class="post-title mb-4">{{ page.title }}</div>
+    <div class="mb-5">
+        <span class="post-date">{{ page.date | date: "%d %b, %Y" }}</span>
+        <i class="bi bi-dot mx-2"></i> 
+        <span>{{ page.categories }}</span>
+    </div>
+    <img class="mb-5 post-thumbnail" src="{{ page.thumbnail }}" alt="">
+
+    <div class="main">
+        {{ content }}
+    </div>
+</div>

@@ -24,14 +24,24 @@ email: suvasish114@gmail.com
 # I'm Suvasish Das, M.Sc Computer Science student. Like to design & building products that positively impact the lives of users.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "suvasish114.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: suvasish114
+github_username:  suvasish114
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+highlighter: rouge
+usemathjax: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'highlight'
 
 defaults:
   -
@@ -41,6 +51,8 @@ defaults:
     values:
       layout: "post"
       title: "Unallocated"
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
