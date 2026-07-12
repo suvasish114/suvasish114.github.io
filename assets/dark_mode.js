@@ -6,25 +6,38 @@
 //         else {localStorage.setItem("theme", "light");}
 //     });
 
-const root = document.documentElement;
-const themeBtn = document.getElementById("themeBtn");
-const toggleIcon = document.getElementById("darkModeToggle");
+document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
+    const themeBtn = document.getElementById("themeBtn");
+    const toggleIcon = document.getElementById("darkModeToggle");
 
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-    root.classList.add("dark-mode");
-    toggleIcon.classList.replace("bi-moon", "bi-brightness-high");
-}
-
-// Toggle theme
-themeBtn.addEventListener("click", function () {
-    root.classList.toggle("dark-mode");
-
-    if (root.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-        toggleIcon.classList.replace("bi-moon", "bi-brightness-high");
-    } else {
-        localStorage.setItem("theme", "light");
-        toggleIcon.classList.replace("bi-brightness-high", "bi-moon");
+    if (!themeBtn || !toggleIcon) {
+        console.error("Theme button or icon not found.");
+        return;
     }
+
+    // Apply theme
+    function setTheme(isDark) {
+        if (isDark) {
+            root.classList.add("dark-mode");
+            toggleIcon.classList.remove("bi-moon");
+            toggleIcon.classList.add("bi-brightness-high");
+            localStorage.setItem("theme", "dark");
+        } else {
+            root.classList.remove("dark-mode");
+            toggleIcon.classList.remove("bi-brightness-high");
+            toggleIcon.classList.add("bi-moon");
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+    setTheme(savedTheme === "dark");
+
+    // Toggle theme
+    themeBtn.addEventListener("click", () => {
+        const isDark = !root.classList.contains("dark-mode");
+        setTheme(isDark);
+    });
 });
