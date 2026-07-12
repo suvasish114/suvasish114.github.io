@@ -1,11 +1,19 @@
 /* color scheme */
-:root {
+:root { /* light mode */
     --primary-black: #000000;
     --primary-white: #FFFFFF;
     --secondary-black: #1E1E1E;
-    --secondary-white: ;
-    --highlight: #9BEC00;
+    --secondary-white: #F5F5F5;
+    --highlight: #f0ffd5;
     --light-gray: #DEDEDE;
+}
+:root.dark-mode { /* dark mode */
+    --primary-black: #FFFFFF;
+    --primary-white: #121212;
+    --secondary-black: #EAEAEA;
+    --secondary-white: #1E1E1E;
+    --highlight: #3A4A1A;
+    --light-gray: #3A3A3A;
 }
 
 /* google font */
@@ -38,7 +46,7 @@ p, table{
 }
 code{
     color: var(--primary-black);
-    background-color: #F9F9F9;
+    background-color: var(--secondary-white);
     padding: 1px 4px;
     border-radius: 4px;
 }
@@ -85,7 +93,7 @@ div{
 }
 
 .home .publications td {
-    background-color: #FAFAFA;
+    background-color: var(--secondary-white);
     color: var(--secondary-black);
     padding: 10px;
     margin: 1rem 0 1rem 0;
@@ -145,7 +153,7 @@ div{
 .card{
     min-height: 200px;
     border: none;
-    background-color: #f5f5f5;
+    background-color: var(--secondary-white);
     border-radius: 1.5rem;
     color: var(--secondary-black);
 }
@@ -217,7 +225,8 @@ div{
 }
 
 blockquote {
-    background-color: #ffefb1;
+    /* background-color: #ffefb1; */
+    background-color: var(--highlight);
     border-left: 3px solid var(--secondary-black);
     padding: 20px;
     margin: 2rem 0;
