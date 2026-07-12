@@ -6,20 +6,21 @@
 //         else {localStorage.setItem("theme", "light");}
 //     });
 
+const root = document.documentElement;
 const themeBtn = document.getElementById("themeBtn");
 const toggleIcon = document.getElementById("darkModeToggle");
 
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
+    root.classList.add("dark-mode");
     toggleIcon.classList.replace("bi-moon", "bi-brightness-high");
 }
 
-// Toggle theme on button click
+// Toggle theme
 themeBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
+    root.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
+    if (root.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
         toggleIcon.classList.replace("bi-moon", "bi-brightness-high");
     } else {
