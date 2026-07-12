@@ -55,6 +55,9 @@ code{
     padding: 1px 4px;
     border-radius: 4px;
 }
+div{
+    background-color: unset;
+}
 
 /* navbar */
 nav{
@@ -63,17 +66,16 @@ nav{
 .navbar{
     border-bottom: 1px solid var(--light-gray);
 }
-div{
-    background-color: unset;
+.nav-link{
+    color: var(--primary-black);
 }
 
 /* profile */
 .home .profile{
     display: block;
     margin: 0 auto;
-    border: 2px solid white;
     border-radius: 20em;
-    padding: 1rem;
+    padding: 1.2rem;
     width: 100%;
 }
 
