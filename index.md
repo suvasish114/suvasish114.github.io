@@ -7,7 +7,7 @@ layout: home
 
 ### Research
 
-My research primarily focuses on multimodal systems architechtures, developing models and techniques that are faster, more efficient and more effective. Broadly, I am interested in models reasoning and imrpoving their power beyond Artificial General Intelligence.
+My research primarily focuses on multimodal system architectures, developing models and techniques that are faster, more efficient and more effective. Broadly, I am interested in models reasoning and imrpoving their power towards Artificial General Intelligence.
 
 <!-- Paper count: 
 <span class="badge rounded-pill text-bg-primary">1</span> Conference
@@ -22,7 +22,7 @@ My research primarily focuses on multimodal systems architechtures, developing m
 ### Awards / Grants
 
 |-|-|-|
-|<i class="bi bi-mortarboard-fill"></i>|Institute Teching Assistentship, awarded by Indian Institute of Technology, Gandhinagar |07/2026|
+|<i class="bi bi-mortarboard-fill"></i>|Institute Teaching Assistantship, awarded by Indian Institute of Technology, Gandhinagar |07/2026|
 |<i class="bi bi-coin"></i>|Receieved honorarium of Rs. 1.2 lakh as tech content creator at [BodhiTree](https://robin.bodhi.cse.iitb.ac.in/), funded by [IBM](https://www.ibm.com/in-en) & [TowerResearch](https://tower-research.com/) |10/2025|
-|<i class="bi bi-mortarboard-fill"></i>|Institute Teching Assistentship, awarded by Indian Institute of Technology, Bombay|01/2025|
-|<i class="bi bi-award-fill"></i>|Inspire Fellowship (round-1) awarded by Department of Science and Technology, Govt. of India|06/2025|
+|<i class="bi bi-mortarboard-fill"></i>|Institute Teaching Assistantship, awarded by Indian Institute of Technology, Bombay|01/2025|
+|<i class="bi bi-award-fill"></i>|Inspire Fellowship (Round 1) awarded by the Department of Science and Technology, Govt. of India|06/2025|
